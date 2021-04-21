@@ -1,0 +1,117 @@
+body {
+  background-color: #f2f2f2;
+}
+
+body h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2.2rem;
+  color: #e2f9f9;
+  margin: 5px 40px 20px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+body p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0 40px 70px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 10%;
+  border-radius: 25px;
+}
+
+.container .sedans {
+  background-color: #e18527;
+  border-radius: 10px 0 0 10px;
+}
+
+.container .sedans p {
+  color: #fdc681;
+}
+
+.container .suvs {
+  background-color: #016972;
+}
+
+.container .suvs p {
+  color: #88d7de;
+}
+
+.container .luxury {
+  background-color: #00403f;
+  border-radius: 0 10px 10px 0;
+}
+
+.container .luxury p {
+  color: #7aaaa7;
+}
+
+.container .sedans-img,
+.container .suvs-img,
+.container .luxury-img {
+  clear: both;
+  width: 70px;
+  margin: 50px 40px 30px;
+}
+
+.container .button,
+.container .button2,
+.container .button3 {
+  width: 150px;
+  height: 50px;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #e2f9f9;
+  border: none;
+  border-radius: 40px;
+  color: #e18527;
+  font-size: 1rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.container .button2 {
+  color: #4d767b;
+}
+
+.container .button3 {
+  color: #314a48;
+}
+
+.container .button:active,
+.container .button2:active,
+.container .button3:active {
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .sedans {
+    border-radius: 10px 10px 0 0;
+  }
+  .container .luxury {
+    border-radius: 0 0 10px 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

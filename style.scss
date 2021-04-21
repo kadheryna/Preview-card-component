@@ -1,0 +1,102 @@
+body {
+  background-color: rgba(242, 242, 242, 255);
+
+  h1 {
+    font-family: "Big Shoulders Display", cursive;
+    font-size: 2.2rem;
+    color: rgba(226, 249, 249, 255);
+    margin: 5px 40px 20px;
+    text-align: left;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0 40px 70px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  margin: 10%;
+  border-radius: 25px;
+
+  .sedans {
+    background-color: rgb(225, 133, 39);
+    border-radius: 10px 0 0 10px;
+    p {
+      color: rgba(253, 198, 129, 255);
+    }
+  }
+
+  .suvs {
+    background-color: rgba(1, 105, 114, 255);
+    p {
+      color: rgba(136, 215, 222, 255);
+    }
+  }
+
+  .luxury {
+    background-color: rgba(0, 64, 63, 255);
+    border-radius: 0 10px 10px 0;
+    p {
+      color: rgba(122, 170, 167, 255);
+    }
+  }
+
+  .sedans-img,
+  .suvs-img,
+  .luxury-img {
+    clear: both;
+    width: 70px;
+    margin: 50px 40px 30px;
+  }
+
+  .button,
+  .button2,
+  .button3 {
+    width: 150px;
+    height: 50px;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: rgba(226, 249, 249, 255);
+    border: none;
+    border-radius: 40px;
+    color: rgb(225, 133, 39);
+    font-size: 1rem;
+    font-family: "Lexend Deca", sans-serif;
+  }
+
+  .button2 {
+    color: rgba(77, 118, 123, 255);
+  }
+
+  .button3 {
+    color: rgba(49, 74, 72, 255);
+  }
+
+  .button:active,
+  .button2:active,
+  .button3:active {
+    transform: translateY(4px);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    .sedans {
+      border-radius: 10px 10px 0 0;
+    }
+    .luxury {
+      border-radius: 0 0 10px 10px;
+    }
+  }
+}
